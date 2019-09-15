@@ -1,0 +1,21 @@
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: yurafedorenko721@gmail.com
+    password: gclgcocxiyxslnhf
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    protocol: smtp
+  kafka:
+    bootstrap-servers: 192.168.99.100:9092
+
+server:
+  port: 8088
+app:
+  topic:
+    mail: mail-topic
