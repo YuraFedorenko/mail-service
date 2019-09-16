@@ -19,7 +19,7 @@ public class EventReceiver {
         log.info("received message='{}'", event);
 
         gmailService.sendEmail(event.getParticipants().iterator().next(),
-                "translation is" + event.getMetadata().get("phrase"),
+                "translation is " + event.getMetadata().get("phrase"),
                 "TRANSLATION");
     }
 }
