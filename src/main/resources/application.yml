@@ -13,9 +13,17 @@ spring:
     protocol: smtp
   kafka:
     bootstrap-servers: 192.168.99.100:9092
+  rabbitmq:
+    host: 192.168.99.100
+    port: 5672
+    username: guest
+    password: guest
 
 server:
   port: 8088
 app:
   topic:
     mail: mail-topic
+rabbit:
+  queue:
+    name: mail_queue
